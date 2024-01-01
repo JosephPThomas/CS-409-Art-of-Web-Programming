@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>MP1</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <ul>
+                    <li ><a class="link" href="#pictures">Pictures</a></li>
+                    <li ><a class="link" href="#contact">Contact</a></li>
+                    <li ><a class="link" href="#material">Material</a></li>
+                    <li ><a class="link" href="#introduction">Introductuion</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div class="main-content">
+
+            <section id="introduction">
+                <p>CS 409</p>
+                <div id="video-container">
+                    <video autoplay muted loop id="background-video">
+                        <source src="./assets/Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+            <section id="material" class="multi-column-section">
+                <div class="column">
+                    <div class="content">
+                        <img id="myBtn" src="./assets/code_icon.png" alt="Image of a code tag, select the image to recieve more information on Front End topics covered in class">
+                        <h2>Front-End</h2>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="close">&times;</span>
+                                <img src="./assets/frontend.png" alt="Image of logo representation HTML,CSS, and JavaScript">
+                                <h2>The Front-End</h2>
+                                <h4>HTML</h4>
+                                <ul>
+                                    <li>Most web pages are written in HTML</li>
+                                    <li>Content is embedded in a set of nested HTML tags</li>
+                                    <li>Layout engine parses HTML into a Document Object Model (DOM)</li>
+                                    <li>Web browsers use generated DOMsto render pages</li>
+                                </ul>
+                                <h4>CSS</h4>
+                                <ul>
+                                    <li>Language for specifying presentation</li>
+                                    <li>Selectors map styles to markup</li>
+                                    <li>Describes how to render</li>
+                                    <li>Separation of content from presentation</li>
+                                </ul>
+                                <h4>JavaScript</h4>
+                                <ul>
+                                    <li>Front-end interactions</li>
+                                    <li>Dynamic content</li>
+                                    <li>Server-side programming (Node.js)</li>
+                                    <li>Object-oriented, imperative, functional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <img id="myBtn1" src="./assets/server-icon.png" alt="Image of multiple server, select the image to recieve more information on Middleware topics covered in class">
+                        <h2>Middleware</h2>
+                        <div id="myModal1" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="close1">&times;</span>
+                                <img src="./assets/middleware.webp" alt="Image of AJAX and JSON logo, to represent context on Middleware">
+                                <h2>The Middleware</h2>
+                                <h4>DATA TRANSFER</h4>
+                                <ul>
+                                    <li>HTTP: request-response protocol</li>
+                                    <li>AJAX: send and receive data without reloading the page</li>
+                                    <li>JSON: data exchange format</li>
+                                </ul>
+                                <h4>APIS AND SERVER LOGIC</h4>
+                                <ul>
+                                    <li>HTTP requests: GET, POST, DELETE, UPDATE</li>
+                                    <li>Designing a RESTful API</li>
+                                    <li>Node.js and Express</li>
+                                    <li>Web Sockets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <img id="myBtn2" src="./assets/database_icon.png" alt="Image of database logo, select the image to recieve more information on Back-End topics covered in class">
+                        <h2>Back-End</h2>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="close2">&times;</span>
+                                <img src="./assets/database.png" alt="Image on SQL vs No SQL">
+                                <h2>The Back-End</h2>
+                                <h4>DATABASES</h4>
+                                <ul>
+                                    <li>SQL (MySQL)</li>
+                                    <li>NoSQL (MongoDB)</li>
+                                    <li>Graph (Neo4j)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="multi-column-section">
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://gitlab.com/uiuc-web-programming/mp1" class="gitlab-link"><i class="fa-brands fa-square-gitlab"></i></a>
+                            <p class="gitlab-link"><b>GitLab</b></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://cs.illinois.edu/academics/courses/cs409" class="gitlab-link"><i class="fa-solid fa-building-columns"></i></a>
+                            <p class="gitlab-link"><b>Course Information</b></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pictures">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">❮</button>
+                    <button class="carousel-button next" data-carousel-button="next">❯</button>
+                    <ul data-slides>
+                      <li class="slide" data-active>
+                        <img src="./assets/img1.jpg" alt="Image on Web Development 1">
+                      </li>
+                      <li class="slide">
+                        <img src="./assets/img2.jpg" alt="Image on Web Development 2">
+                      </li>
+                      <li class="slide">
+                        <img src="./assets/img3.jpg" alt="Image on Web Development 3">
+                      </li>
+                    </ul>
+                  </div>
+            </section>
+        </div>
+        <footer>
+            <p>Copyright &copy; CS409Website</p>
+        </footer>
+    </body>
+</html>
