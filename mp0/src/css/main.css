@@ -1,0 +1,23 @@
+/* Your CSS here. */
+.card {
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background-color: rgb(114, 177, 177);
+  }
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+  }
+.aligncenter {
+    text-align: center;
+  }
+.textdesign{
+    font-weight: bold;
+    font-style: italic;
+}
